@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/et_register_pw_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_custom_line"
+        android:ems="10"
+        android:fontFamily="@font/bmyeonsung"
+        android:hint="비밀번호 확인"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_register_pw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_register_pw"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_pw" />
+
+    <EditText
+        android:id="@+id/et_register_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/bg_custom_line"
+        android:ems="10"
+        android:fontFamily="@font/bmyeonsung"
+        android:hint="이메일"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_register_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_custom_line"
+        android:ems="10"
+        android:fontFamily="@font/bmyeonsung"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_register_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_register_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_email" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="24dp"
+        android:foreground="@drawable/sdjoin"
+        android:text="회원가입"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_select_subject"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="@+id/btn_select_subject"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_subject" />
+
+    <EditText
+        android:id="@+id/et_register_pw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_custom_line"
+        android:ems="10"
+        android:fontFamily="@font/bmyeonsung"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/et_register_id"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_register_id"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_id" />
+
+    <android.widget.Button
+        android:id="@+id/btn_select_subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bmyeonsung"
+        android:text="과목 선택"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_register_pw_confirm"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_register_pw_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/et_register_pw_confirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
